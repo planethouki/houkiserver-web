@@ -7,6 +7,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "devDependencies": {
     "nuxt": "^3.6.5",
     "sass": "^1.66.1"
