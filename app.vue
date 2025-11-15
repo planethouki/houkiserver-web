@@ -9,6 +9,12 @@
 
           <div class="navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <nuxt-link class="nav-link active" aria-current="page" to="/terms">利用規約</nuxt-link>
+              </li>
+              <li class="nav-item">
+                <nuxt-link class="nav-link active" aria-current="page" to="/privacy">プライバシーポリシー</nuxt-link>
+              </li>
             </ul>
           </div>
         </div>
