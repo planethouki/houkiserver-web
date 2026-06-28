@@ -70,6 +70,7 @@ typings/
 
 # Nuxt generate
 dist
+.amplify-hosting
 
 # vuepress build output
 .vuepress/dist
