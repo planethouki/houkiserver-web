@@ -3,7 +3,7 @@ import { ServerStatus, ServerStatusResponse } from '~/types'
 
 export default defineEventHandler(async (event): Promise<ServerStatusResponse> => {
   try {
-    const s = await util.status('mc.houkiserver.com', 25565) as ServerStatus
+    const s = await util.status('mc.houkiserver.com', 25565, { timeout: 3000 }) as ServerStatus
     return {
       result: s,
       isServerOnline: true,

@@ -1,44 +1,19 @@
-# houkiserver
+# houkiserver-web
 
-## Documentation
+ほうき鯖の Web サイトです。Nuxt を AWS Amplify Hosting の SSR として配信し、Minecraft サーバーの状態は Nuxt のサーバー API から取得します。
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
+## ローカル開発
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
+npm ci
+cp .env.sample .env
 npm run dev
 ```
 
-## Production
-
-Build the application for production:
+## ビルド確認
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Amplify のビルド環境では、配信する成果物が `.amplify-hosting` に生成されます。
