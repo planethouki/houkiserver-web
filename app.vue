@@ -3,7 +3,7 @@
     <header class="site-header" :class="{ 'inner-header': route.path !== '/' }">
       <nav class="site-nav" aria-label="メインナビゲーション">
         <NuxtLink class="brand" to="/" aria-label="ほうき鯖 トップページ">
-          <span class="brand-mark" aria-hidden="true">✦</span><span>ほうき鯖</span>
+          <img class="brand-mark" src="/favicon.ico" alt="" width="28" height="28"><span>ほうき鯖</span>
         </NuxtLink>
         <div class="nav-links">
           <NuxtLink to="/#about">ほうき鯖について</NuxtLink>
@@ -16,7 +16,7 @@
     <main><NuxtPage /></main>
 
     <footer class="site-footer">
-      <NuxtLink class="footer-brand" to="/">✦ ほうき鯖</NuxtLink>
+      <NuxtLink class="footer-brand" to="/"><img class="footer-mark" src="/favicon.ico" alt="" width="24" height="24">ほうき鯖</NuxtLink>
       <p>Java版 Minecraft サーバー</p>
       <div class="footer-links">
         <NuxtLink to="/terms">利用規約</NuxtLink>
@@ -75,10 +75,13 @@ a { color: inherit; }
   text-decoration: none;
 }
 .brand-mark {
-  color: var(--star);
-  font-size: 1.4rem;
-  filter: drop-shadow(0 0 8px rgba(255, 214, 107, 0.7));
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.25));
 }
+.footer-mark { width: 24px; height: 24px; border-radius: 4px; object-fit: cover; }
 .nav-links { display: flex; gap: 32px; align-items: center; }
 .nav-links a {
   color: #d9e0f0;

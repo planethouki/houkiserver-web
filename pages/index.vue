@@ -6,8 +6,8 @@
       <div class="comet" aria-hidden="true"><span>✦</span></div>
 
       <div class="hero-content">
-        <p class="eyebrow"><span>✦</span> ほうき鯖へようこそ</p>
-        <h1>掘って、守って、<br><span>その先の世界へ。</span></h1>
+        <p class="eyebrow"><img class="eyebrow-icon" src="/favicon.ico" alt="" width="18" height="18">ほうき鯖</p>
+        <h1>ふつうの<br><span>サバイバルサーバー</span></h1>
         <p class="hero-copy">
           対人戦なし。少人数で落ち着いて、採掘・建築・冒険を楽しむ<br class="desktop-only">
           Java版 Minecraft サバイバルサーバーです。
@@ -33,43 +33,20 @@
             <span class="status-divider" />
             {{ serverStatus.onlinePlayerCount }} / {{ serverStatus.maxPlayerCount }} 人が参加中
             <span class="status-divider" />
-            {{ serverStatus.version }}
+            <span class="status-version">対応バージョン：{{ serverStatus.version }}</span>
           </template>
           <template v-else>現在オフライン</template>
         </div>
       </div>
 
-      <a class="scroll-cue" href="#about" aria-label="ほうき鯖についてを見る">
+      <a class="scroll-cue" href="#join" aria-label="冒険の流れを見る">
         <span>下へ</span><i aria-hidden="true" />
       </a>
     </section>
 
-    <section id="about" class="section about-section">
-      <div class="section-heading">
-        <p class="eyebrow"><span>✦</span> ほうき鯖について</p>
-        <h2>競わず、急がず、<br><span>自分のペースで。</span></h2>
-        <p>ほうき鯖は、最大9人の小さなサバイバルサーバー。ひとりで黙々と遊ぶのも、仲間と大きなものを作るのも自由です。</p>
-      </div>
-
-      <div class="server-values">
-        <article>
-          <span class="value-icon" aria-hidden="true">⚔</span>
-          <div><strong>対人戦なし</strong><p>すべてのワールドで、プレイヤー同士の攻撃は無効です。</p></div>
-        </article>
-        <article>
-          <span class="value-icon" aria-hidden="true">◆</span>
-          <div><strong>サバイバル</strong><p>採掘・建築・モンスター討伐を中心に楽しめます。</p></div>
-        </article>
-        <article>
-          <span class="value-icon" aria-hidden="true">✦</span>
-          <div><strong>最大9人</strong><p>少人数で落ち着いて遊べる環境です。</p></div>
-        </article>
-      </div>
-    </section>
-
     <section id="join" class="section journey-section">
       <div class="section-heading journey-heading">
-        <p class="eyebrow"><span>✦</span> はじめての冒険</p>
+        <p class="eyebrow"><img class="eyebrow-icon" src="/favicon.ico" alt="" width="18" height="18">はじめての冒険</p>
         <h2>小さな仮拠点から、<br><span>あなたの世界へ。</span></h2>
         <p>サーバーに接続したあと、どんな冒険が待っているのかをご案内します。</p>
       </div>
@@ -124,11 +101,10 @@
         <p class="eyebrow">新しい世界の開放</p>
         <h3>遊び続けると、世界が広がる。</h3>
         <p>サーバーでしばらく遊び、運営の確認が完了すると、永住できる2つのワールドへ行けるようになります。</p>
-        <small>開放はプレイ時間による自動判定ではなく、運営が個別に判断します。</small>
       </div>
 
       <div class="destination-heading">
-        <p class="eyebrow"><span>✦</span> 拠点をつくる世界</p>
+        <p class="eyebrow"><img class="eyebrow-icon" src="/favicon.ico" alt="" width="18" height="18">拠点をつくる世界</p>
         <h2>暮らす世界を選ぼう。</h2>
         <p>どちらも原則リセットなし。集めたアイテムを持って、本格的な拠点づくりを始められます。</p>
       </div>
@@ -160,10 +136,33 @@
       </div>
     </section>
 
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <p class="eyebrow"><img class="eyebrow-icon" src="/favicon.ico" alt="" width="18" height="18">ほうき鯖について</p>
+        <h2>競わず、急がず、<br><span>自分のペースで。</span></h2>
+        <p>ほうき鯖は、最大9人の小さなサバイバルサーバー。ひとりで黙々と遊ぶのも、仲間と大きなものを作るのも自由です。</p>
+      </div>
+
+      <div class="server-values">
+        <article>
+          <span class="value-icon" aria-hidden="true">⚔</span>
+          <div><strong>対人戦なし</strong><p>すべてのワールドで、プレイヤー同士の攻撃は無効です。</p></div>
+        </article>
+        <article>
+          <span class="value-icon" aria-hidden="true">◆</span>
+          <div><strong>サバイバル</strong><p>採掘・建築・モンスター討伐を中心に楽しめます。</p></div>
+        </article>
+        <article>
+          <span class="value-icon" aria-hidden="true">✦</span>
+          <div><strong>最大9人</strong><p>少人数で落ち着いて遊べる環境です。</p></div>
+        </article>
+      </div>
+    </section>
+
     <section id="community" class="section community-section">
       <div class="community-glow" aria-hidden="true" />
       <div class="community-content">
-        <p class="eyebrow"><span>✦</span> 困ったときは</p>
+        <p class="eyebrow"><img class="eyebrow-icon" src="/favicon.ico" alt="" width="18" height="18">困ったときは</p>
         <h2>分からないことを、<br>聞いてみる。</h2>
         <p>分からないことや困ったことがあれば、Discordでほかのプレイヤーに聞いてみてください。運営者への連絡にはXも利用できます。</p>
         <div class="community-actions">
@@ -323,16 +322,24 @@ async function fetchServerStatus() {
   padding: 150px 0 100px;
 }
 .eyebrow {
+  display: flex;
+  align-items: center;
   margin: 0 0 22px;
   color: var(--cyan);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
-.eyebrow span { margin-right: 8px; color: var(--star); }
+.eyebrow-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  border-radius: 3px;
+  object-fit: cover;
+}
 h1, h2, h3, p { margin-top: 0; }
 h1 {
-  max-width: 820px;
+  max-width: 1100px;
   margin-bottom: 28px;
   font-size: clamp(3rem, 6.7vw, 6.2rem);
   font-weight: 900;
@@ -345,6 +352,7 @@ h1 span, .section-heading h2 span {
   background-clip: text;
   -webkit-background-clip: text;
 }
+h1 span { white-space: nowrap; }
 .hero-copy {
   margin-bottom: 38px;
   color: var(--muted);
@@ -418,6 +426,12 @@ h1 span, .section-heading h2 span {
 }
 .offline .status-dot { background: #ff7a88; box-shadow: 0 0 10px #ff7a88; }
 .status-divider { width: 1px; height: 12px; background: var(--line); }
+.status-version {
+  color: #e9edf8;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
 .scroll-cue {
   position: absolute;
   z-index: 4;
@@ -608,7 +622,7 @@ code {
   font-size: 2rem;
   filter: drop-shadow(0 0 14px rgba(255, 214, 107, 0.5));
 }
-.unlock-message .eyebrow { margin-bottom: 15px; color: var(--purple); }
+.unlock-message .eyebrow { justify-content: center; margin-bottom: 15px; color: var(--purple); }
 .unlock-message h3 { margin-bottom: 16px; font-size: clamp(1.7rem, 3.2vw, 2.7rem); font-weight: 900; }
 .unlock-message > p:last-of-type { margin-bottom: 17px; color: var(--muted); line-height: 1.8; }
 .unlock-message small { color: #7e89a1; font-size: 0.7rem; }
@@ -724,7 +738,7 @@ code {
 }
 
 @media (max-width: 520px) {
-  h1 { font-size: clamp(2.7rem, 14vw, 4.2rem); }
+  h1 { font-size: clamp(2rem, 10vw, 3.4rem); }
   .desktop-only { display: none; }
   .hero-actions { display: grid; }
   .address-button { min-width: 0; width: 100%; }
