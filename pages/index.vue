@@ -6,22 +6,22 @@
       <div class="comet" aria-hidden="true"><span>✦</span></div>
 
       <div class="hero-content">
-        <p class="eyebrow"><span>✦</span> PLANET HOUKI PRESENTS</p>
+        <p class="eyebrow"><span>✦</span> ほうき鯖へようこそ</p>
         <h1>掘って、守って、<br><span>その先の世界へ。</span></h1>
         <p class="hero-copy">
-          PvPなし。少人数で落ち着いて、採掘・建築・冒険を楽しむ<br class="desktop-only">
+          対人戦なし。少人数で落ち着いて、採掘・建築・冒険を楽しむ<br class="desktop-only">
           Java版 Minecraft サバイバルサーバーです。
         </p>
 
         <div class="hero-actions">
           <button class="address-button" type="button" @click="copyAddress">
-            <span class="address-label">SERVER ADDRESS</span>
+            <span class="address-label">サーバーアドレス</span>
             <strong>{{ serverAddress }}</strong>
             <span class="copy-icon" aria-hidden="true">{{ copied ? '✓' : '▣' }}</span>
             <span class="copy-hint">{{ copied ? 'コピーしました！' : 'クリックでコピー' }}</span>
           </button>
           <a v-if="discord" class="primary-button" :href="discord" target="_blank" rel="noreferrer">
-            Discordに参加 <span aria-hidden="true">↗</span>
+            Discordを開く <span aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -31,7 +31,7 @@
           <template v-else-if="serverStatus.isServerOnline">
             現在オンライン
             <span class="status-divider" />
-            {{ serverStatus.onlinePlayerCount }} / {{ serverStatus.maxPlayerCount }} PLAYERS
+            {{ serverStatus.onlinePlayerCount }} / {{ serverStatus.maxPlayerCount }} 人が参加中
             <span class="status-divider" />
             {{ serverStatus.version }}
           </template>
@@ -40,13 +40,13 @@
       </div>
 
       <a class="scroll-cue" href="#about" aria-label="ほうき鯖についてを見る">
-        <span>SCROLL</span><i aria-hidden="true" />
+        <span>下へ</span><i aria-hidden="true" />
       </a>
     </section>
 
     <section id="about" class="section about-section">
       <div class="section-heading">
-        <p class="eyebrow"><span>✦</span> ABOUT HOUKI SERVER</p>
+        <p class="eyebrow"><span>✦</span> ほうき鯖について</p>
         <h2>競わず、急がず、<br><span>自分のペースで。</span></h2>
         <p>ほうき鯖は、最大9人の小さなサバイバルサーバー。ひとりで黙々と遊ぶのも、仲間と大きなものを作るのも自由です。</p>
       </div>
@@ -54,11 +54,11 @@
       <div class="server-values">
         <article>
           <span class="value-icon" aria-hidden="true">⚔</span>
-          <div><strong>PvPなし</strong><p>すべてのワールドで対人戦は無効です。</p></div>
+          <div><strong>対人戦なし</strong><p>すべてのワールドで、プレイヤー同士の攻撃は無効です。</p></div>
         </article>
         <article>
           <span class="value-icon" aria-hidden="true">◆</span>
-          <div><strong>サバイバル</strong><p>採掘・建築・PvEを中心に楽しめます。</p></div>
+          <div><strong>サバイバル</strong><p>採掘・建築・モンスター討伐を中心に楽しめます。</p></div>
         </article>
         <article>
           <span class="value-icon" aria-hidden="true">✦</span>
@@ -69,7 +69,7 @@
 
     <section id="join" class="section journey-section">
       <div class="section-heading journey-heading">
-        <p class="eyebrow"><span>✦</span> YOUR FIRST JOURNEY</p>
+        <p class="eyebrow"><span>✦</span> はじめての冒険</p>
         <h2>小さな仮拠点から、<br><span>あなたの世界へ。</span></h2>
         <p>サーバーに接続したあと、どんな冒険が待っているのかをご案内します。</p>
       </div>
@@ -80,8 +80,8 @@
             <img src="/1-world-spawn.png" alt="ほうき鯖の初期スポーン地点" width="1920" height="1080" loading="lazy">
           </figure>
           <div class="journey-copy">
-            <span class="step-index">STEP 01</span>
-            <p class="world-label">WORLD</p>
+            <span class="step-index">手順 01</span>
+            <p class="world-label">初期スポーン</p>
             <h3>まずは、ここから。</h3>
             <p>接続すると、最初にスポーンするサーバーの入口です。ここから資源ワールドへ旅立ちます。</p>
             <code>/saisei</code>
@@ -93,8 +93,8 @@
             <img src="/2-saisei-ore.png" alt="資源ワールドsaiseiの採掘場" width="1920" height="1080" loading="lazy">
           </figure>
           <div class="journey-copy">
-            <span class="step-index">STEP 02</span>
-            <p class="world-label">SAISEI</p>
+            <span class="step-index">手順 02</span>
+            <p class="world-label">資源ワールド「saisei」</p>
             <h3>資源を集め、仮拠点をつくる。</h3>
             <p><code>/saisei</code> で資源ワールドへ。採掘や冒険で装備と建築資材を集め、まずは小さな仮拠点を作りましょう。</p>
             <aside class="notice"><span aria-hidden="true">↻</span><p><strong>定期的に再生成されます</strong>saiseiの地形・建築物・設置物はリセットされます。</p></aside>
@@ -106,8 +106,8 @@
             <img src="/3-protect-area.png" alt="金のシャベルで保護範囲を指定した建築物" width="1920" height="1080" loading="lazy">
           </figure>
           <div class="journey-copy">
-            <span class="step-index">STEP 03</span>
-            <p class="world-label">CLAIM YOUR LAND</p>
+            <span class="step-index">手順 03</span>
+            <p class="world-label">領域保護</p>
             <h3>大切なものを、きちんと守る。</h3>
             <p>初期チェストは自動では保護されません。金のシャベルで土地の対角となる2点を指定すると、建築物やチェストをほかのプレイヤーから守れます。</p>
             <ol class="claim-steps">
@@ -121,14 +121,14 @@
 
       <div class="unlock-message">
         <span class="unlock-star" aria-hidden="true">✦</span>
-        <p class="eyebrow">THE WORLD OPENS UP</p>
+        <p class="eyebrow">新しい世界の開放</p>
         <h3>遊び続けると、世界が広がる。</h3>
         <p>サーバーでしばらく遊び、運営の確認が完了すると、永住できる2つのワールドへ行けるようになります。</p>
         <small>開放はプレイ時間による自動判定ではなく、運営が個別に判断します。</small>
       </div>
 
       <div class="destination-heading">
-        <p class="eyebrow"><span>✦</span> CHOOSE YOUR HOME</p>
+        <p class="eyebrow"><span>✦</span> 拠点をつくる世界</p>
         <h2>暮らす世界を選ぼう。</h2>
         <p>どちらも原則リセットなし。集めたアイテムを持って、本格的な拠点づくりを始められます。</p>
       </div>
@@ -138,8 +138,8 @@
           <img src="/4-kaitaku.png" alt="kaitakuワールドに作られた街並み" width="1920" height="1080" loading="lazy">
           <div class="destination-overlay" />
           <div class="destination-copy">
-            <div class="destination-meta"><span>EASY</span><span>開拓・建築</span></div>
-            <p class="world-label">KAITAKU</p>
+            <div class="destination-meta"><span>難易度：イージー</span><span>開拓・建築</span></div>
+            <p class="world-label">開拓ワールド「kaitaku」</p>
             <h3>思い描いた景色を、形に。</h3>
             <p>穏やかな難易度で、建築や街づくりにじっくり取り組める開拓用ワールドです。</p>
             <code>/kaitaku</code>
@@ -150,8 +150,8 @@
           <img src="/5-bouken.png" alt="boukenワールドの巨大な渓谷" width="1920" height="1080" loading="lazy">
           <div class="destination-overlay" />
           <div class="destination-copy">
-            <div class="destination-meta"><span>HARD</span><span>冒険・PvE</span></div>
-            <p class="world-label">BOUKEN</p>
+            <div class="destination-meta"><span>難易度：ハード</span><span>冒険・モンスター討伐</span></div>
+            <p class="world-label">冒険ワールド「bouken」</p>
             <h3>険しい世界を、生き抜こう。</h3>
             <p>歯応えのあるサバイバルと冒険を楽しむ、上級者向けのワールドです。</p>
             <code>/bouken</code>
@@ -163,20 +163,21 @@
     <section id="community" class="section community-section">
       <div class="community-glow" aria-hidden="true" />
       <div class="community-content">
-        <p class="eyebrow"><span>✦</span> JOIN OUR COMMUNITY</p>
-        <h2>冒険の続きは、<br>コミュニティで。</h2>
-        <p>お知らせや交流はDiscordから。遊び方の動画も公開しています。</p>
+        <p class="eyebrow"><span>✦</span> 困ったときは</p>
+        <h2>分からないことを、<br>聞いてみる。</h2>
+        <p>分からないことや困ったことがあれば、Discordでほかのプレイヤーに聞いてみてください。運営者への連絡にはXも利用できます。</p>
         <div class="community-actions">
           <a v-if="discord" class="primary-button" :href="discord" target="_blank" rel="noreferrer">
-            Discordに参加 <span aria-hidden="true">↗</span>
+            Discordを開く <span aria-hidden="true">↗</span>
           </a>
           <a v-if="youtube" class="text-link" :href="youtube" target="_blank" rel="noreferrer">
-            YouTubeで遊び方を見る <span aria-hidden="true">→</span>
+            土地保護の解説動画 <span aria-hidden="true">↗</span>
           </a>
           <a class="text-link" href="https://twitter.com/planethouki" target="_blank" rel="noreferrer">
-            X / Twitter <span aria-hidden="true">↗</span>
+            運営者へXで連絡 <span aria-hidden="true">↗</span>
           </a>
         </div>
+        <p class="contact-note">※ Xは運営者の個人アカウントです。サーバー情報の発信専用ではありません。</p>
       </div>
     </section>
   </div>
@@ -326,7 +327,7 @@ async function fetchServerStatus() {
   color: var(--cyan);
   font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.12em;
 }
 .eyebrow span { margin-right: 8px; color: var(--star); }
 h1, h2, h3, p { margin-top: 0; }
@@ -371,7 +372,7 @@ h1 span, .section-heading h2 span {
   color: var(--muted);
   font-size: 0.58rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
 }
 .address-button strong { font-family: Consolas, monospace; font-size: 1.08rem; letter-spacing: 0.02em; }
 .copy-icon { position: absolute; top: 19px; right: 20px; color: var(--cyan); }
@@ -520,7 +521,7 @@ h1 span, .section-heading h2 span {
   font-family: Consolas, monospace;
   font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
 }
 .world-label {
   margin-bottom: 10px;
@@ -528,7 +529,7 @@ h1 span, .section-heading h2 span {
   font-family: Consolas, monospace;
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.12em;
 }
 .journey-copy h3 {
   margin-bottom: 20px;
@@ -688,6 +689,12 @@ code {
 }
 .community-content { position: relative; z-index: 2; max-width: 650px; }
 .community-content > p { margin-bottom: 34px; }
+.community-content .contact-note {
+  margin: 20px 0 0;
+  color: #7e89a1;
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
 .text-link {
   display: inline-flex;
   gap: 12px;

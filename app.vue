@@ -8,7 +8,7 @@
         <div class="nav-links">
           <NuxtLink to="/#about">ほうき鯖について</NuxtLink>
           <NuxtLink to="/#join">冒険の流れ</NuxtLink>
-          <NuxtLink class="nav-cta" to="/#community">コミュニティ</NuxtLink>
+          <NuxtLink class="nav-cta" to="/#community">困ったときは</NuxtLink>
         </div>
       </nav>
     </header>
