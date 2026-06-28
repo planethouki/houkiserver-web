@@ -7,10 +7,10 @@
 
       <div class="hero-content">
         <p class="eyebrow"><span>✦</span> PLANET HOUKI PRESENTS</p>
-        <h1>きらめく世界へ、<br><span>一緒に飛び込もう。</span></h1>
+        <h1>掘って、守って、<br><span>その先の世界へ。</span></h1>
         <p class="hero-copy">
-          ほうき鯖は、みんなでのんびり冒険を楽しむ<br class="desktop-only">
-          Java版 Minecraft マルチプレイサーバーです。
+          PvPなし。少人数で落ち着いて、採掘・建築・冒険を楽しむ<br class="desktop-only">
+          Java版 Minecraft サバイバルサーバーです。
         </p>
 
         <div class="hero-actions">
@@ -47,64 +47,115 @@
     <section id="about" class="section about-section">
       <div class="section-heading">
         <p class="eyebrow"><span>✦</span> ABOUT HOUKI SERVER</p>
-        <h2>あなたの物語が、<br><span>ここからはじまる。</span></h2>
-        <p>ひとりの冒険も、仲間との大仕事も。遊び方を決めるのはあなたです。</p>
+        <h2>競わず、急がず、<br><span>自分のペースで。</span></h2>
+        <p>ほうき鯖は、最大9人の小さなサバイバルサーバー。ひとりで黙々と遊ぶのも、仲間と大きなものを作るのも自由です。</p>
       </div>
 
-      <div class="feature-grid">
-        <article class="feature-card featured">
-          <div class="feature-visual landscape" aria-hidden="true">
-            <span class="moon" />
-            <span class="mountain mountain-back" />
-            <span class="mountain mountain-front" />
-          </div>
-          <div class="feature-copy">
-            <span class="card-number">01</span>
-            <h3>広がる、冒険の世界</h3>
-            <p>新しい景色を探し、拠点をつくり、自由な冒険へ出かけよう。</p>
-          </div>
+      <div class="server-values">
+        <article>
+          <span class="value-icon" aria-hidden="true">⚔</span>
+          <div><strong>PvPなし</strong><p>すべてのワールドで対人戦は無効です。</p></div>
         </article>
-
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">♢</div>
-          <span class="card-number">02</span>
-          <h3>じっくり、ものづくり</h3>
-          <p>小さな家から大きな街まで。思い描いたものを自分のペースで形にできます。</p>
+        <article>
+          <span class="value-icon" aria-hidden="true">◆</span>
+          <div><strong>サバイバル</strong><p>採掘・建築・PvEを中心に楽しめます。</p></div>
         </article>
-
-        <article class="feature-card">
-          <div class="feature-icon community-icon" aria-hidden="true">✦</div>
-          <span class="card-number">03</span>
-          <h3>つながる、コミュニティ</h3>
-          <p>困ったときは助け合い、うれしい発見は分かち合う。仲間と遊ぶ楽しさが待っています。</p>
+        <article>
+          <span class="value-icon" aria-hidden="true">✦</span>
+          <div><strong>最大9人</strong><p>少人数で落ち着いて遊べる環境です。</p></div>
         </article>
       </div>
     </section>
 
-    <section id="join" class="section join-section">
-      <div class="section-heading compact">
-        <p class="eyebrow"><span>✦</span> HOW TO JOIN</p>
-        <h2>さあ、ほうき鯖へ。</h2>
-        <p>参加はかんたん、3ステップ。</p>
+    <section id="join" class="section journey-section">
+      <div class="section-heading journey-heading">
+        <p class="eyebrow"><span>✦</span> YOUR FIRST JOURNEY</p>
+        <h2>小さな仮拠点から、<br><span>あなたの世界へ。</span></h2>
+        <p>サーバーに接続したあと、どんな冒険が待っているのかをご案内します。</p>
       </div>
 
-      <div class="steps">
-        <article>
-          <span class="step-number">1</span>
-          <h3>Java版を起動</h3>
-          <p>Minecraft Java Edition のマルチプレイを開きます。</p>
+      <div class="journey-list">
+        <article class="journey-step">
+          <figure class="journey-image">
+            <img src="/1-world-spawn.png" alt="ほうき鯖の初期スポーン地点" width="1920" height="1080" loading="lazy">
+          </figure>
+          <div class="journey-copy">
+            <span class="step-index">STEP 01</span>
+            <p class="world-label">WORLD</p>
+            <h3>まずは、ここから。</h3>
+            <p>接続すると、最初にスポーンするサーバーの入口です。ここから資源ワールドへ旅立ちます。</p>
+            <code>/saisei</code>
+          </div>
         </article>
-        <span class="step-line" aria-hidden="true" />
-        <article>
-          <span class="step-number">2</span>
-          <h3>サーバーを追加</h3>
-          <p>サーバーアドレスに<br><strong>{{ serverAddress }}</strong> を入力。</p>
+
+        <article class="journey-step reverse">
+          <figure class="journey-image">
+            <img src="/2-saisei-ore.png" alt="資源ワールドsaiseiの採掘場" width="1920" height="1080" loading="lazy">
+          </figure>
+          <div class="journey-copy">
+            <span class="step-index">STEP 02</span>
+            <p class="world-label">SAISEI</p>
+            <h3>資源を集め、仮拠点をつくる。</h3>
+            <p><code>/saisei</code> で資源ワールドへ。採掘や冒険で装備と建築資材を集め、まずは小さな仮拠点を作りましょう。</p>
+            <aside class="notice"><span aria-hidden="true">↻</span><p><strong>定期的に再生成されます</strong>saiseiの地形・建築物・設置物はリセットされます。</p></aside>
+          </div>
         </article>
-        <span class="step-line" aria-hidden="true" />
-        <article>
-          <span class="step-number">3</span>
-          <h3>冒険をはじめる</h3>
-          <p>接続したら、ほうき鯖での物語がスタートです。</p>
+
+        <article class="journey-step">
+          <figure class="journey-image protect-image">
+            <img src="/3-protect-area.png" alt="金のシャベルで保護範囲を指定した建築物" width="1920" height="1080" loading="lazy">
+          </figure>
+          <div class="journey-copy">
+            <span class="step-index">STEP 03</span>
+            <p class="world-label">CLAIM YOUR LAND</p>
+            <h3>大切なものを、きちんと守る。</h3>
+            <p>初期チェストは自動では保護されません。金のシャベルで土地の対角となる2点を指定すると、建築物やチェストをほかのプレイヤーから守れます。</p>
+            <ol class="claim-steps">
+              <li><span>1</span>金のシャベルを作る</li>
+              <li><span>2</span>保護する範囲の始点を右クリック</li>
+              <li><span>3</span>対角の終点を右クリック</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+
+      <div class="unlock-message">
+        <span class="unlock-star" aria-hidden="true">✦</span>
+        <p class="eyebrow">THE WORLD OPENS UP</p>
+        <h3>遊び続けると、世界が広がる。</h3>
+        <p>サーバーでしばらく遊び、運営の確認が完了すると、永住できる2つのワールドへ行けるようになります。</p>
+        <small>開放はプレイ時間による自動判定ではなく、運営が個別に判断します。</small>
+      </div>
+
+      <div class="destination-heading">
+        <p class="eyebrow"><span>✦</span> CHOOSE YOUR HOME</p>
+        <h2>暮らす世界を選ぼう。</h2>
+        <p>どちらも原則リセットなし。集めたアイテムを持って、本格的な拠点づくりを始められます。</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card">
+          <img src="/4-kaitaku.png" alt="kaitakuワールドに作られた街並み" width="1920" height="1080" loading="lazy">
+          <div class="destination-overlay" />
+          <div class="destination-copy">
+            <div class="destination-meta"><span>EASY</span><span>開拓・建築</span></div>
+            <p class="world-label">KAITAKU</p>
+            <h3>思い描いた景色を、形に。</h3>
+            <p>穏やかな難易度で、建築や街づくりにじっくり取り組める開拓用ワールドです。</p>
+            <code>/kaitaku</code>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="/5-bouken.png" alt="boukenワールドの巨大な渓谷" width="1920" height="1080" loading="lazy">
+          <div class="destination-overlay" />
+          <div class="destination-copy">
+            <div class="destination-meta"><span>HARD</span><span>冒険・PvE</span></div>
+            <p class="world-label">BOUKEN</p>
+            <h3>険しい世界を、生き抜こう。</h3>
+            <p>歯応えのあるサバイバルと冒険を楽しむ、上級者向けのワールドです。</p>
+            <code>/bouken</code>
+          </div>
         </article>
       </div>
     </section>
@@ -394,96 +445,212 @@ h1 span, .section-heading h2 span {
   letter-spacing: -0.04em;
 }
 .section-heading > p:last-child, .community-content > p { color: var(--muted); line-height: 1.9; }
-.feature-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px; }
-.feature-card {
-  position: relative;
-  min-height: 280px;
-  overflow: hidden;
-  padding: 38px;
+.server-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.server-values article {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 28px;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 14px;
   background: linear-gradient(145deg, rgba(20, 29, 55, 0.9), rgba(12, 18, 36, 0.95));
 }
-.feature-card.featured { grid-row: span 2; min-height: 580px; padding: 0; }
-.feature-visual {
-  position: relative;
-  height: 58%;
-  overflow: hidden;
-  background: radial-gradient(circle at 75% 30%, rgba(168, 146, 255, 0.3), transparent 20%), linear-gradient(#111a3b, #17254c);
+.value-icon {
+  display: grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(105, 226, 220, 0.25);
+  border-radius: 50%;
+  color: var(--cyan);
+  background: rgba(105, 226, 220, 0.06);
 }
-.feature-visual::before {
+.server-values strong { display: block; margin-bottom: 7px; font-size: 1.05rem; }
+.server-values p { margin-bottom: 0; color: var(--muted); font-size: 0.82rem; line-height: 1.7; }
+
+.journey-section {
+  background:
+    radial-gradient(circle at 88% 14%, rgba(75, 157, 166, 0.1), transparent 22%),
+    #080d1b;
+}
+.journey-heading { margin-bottom: 90px; }
+.journey-list { display: grid; gap: 110px; }
+.journey-step {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: clamp(45px, 7vw, 90px);
+  align-items: center;
+}
+.journey-step.reverse { grid-template-columns: minmax(300px, 0.75fr) minmax(0, 1.25fr); }
+.journey-step.reverse .journey-image { order: 2; }
+.journey-image {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #0e1428;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.24);
+}
+.journey-image::after {
   position: absolute;
   inset: 0;
-  opacity: 0.5;
-  background-image: radial-gradient(circle, #fff 0 1px, transparent 1.3px);
-  background-size: 70px 70px;
+  border-radius: inherit;
+  box-shadow: inset 0 0 60px rgba(4, 8, 18, 0.2);
   content: "";
+  pointer-events: none;
 }
-.moon {
-  position: absolute;
-  top: 24%;
-  right: 20%;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: #f6e4a4;
-  box-shadow: 0 0 35px rgba(246, 228, 164, 0.45);
-}
-.mountain {
-  position: absolute;
-  bottom: -20%;
-  width: 70%;
-  aspect-ratio: 1;
-  background: #17223e;
-  transform: rotate(45deg);
-}
-.mountain-back { left: -15%; background: #29365c; }
-.mountain-front { right: -10%; bottom: -38%; background: #10192e; }
-.feature-copy { padding: 34px 38px; }
-.card-number {
+.journey-image img {
   display: block;
-  margin-bottom: 14px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.protect-image img { object-position: center 45%; }
+.journey-copy { position: relative; }
+.step-index {
+  display: block;
+  margin-bottom: 20px;
   color: var(--cyan);
   font-family: Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+.world-label {
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: Consolas, monospace;
   font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
 }
-.feature-card h3, .steps h3 { margin-bottom: 12px; font-size: 1.35rem; font-weight: 800; }
-.feature-card p, .steps p { margin-bottom: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.8; }
-.feature-icon {
-  position: absolute;
-  right: 36px;
-  bottom: 25px;
-  color: rgba(105, 226, 220, 0.19);
-  font-size: 7.5rem;
-  line-height: 1;
-  transform: rotate(12deg);
+.journey-copy h3 {
+  margin-bottom: 20px;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
 }
-.community-icon { color: rgba(159, 140, 255, 0.18); filter: drop-shadow(0 0 20px rgba(159, 140, 255, 0.2)); }
-.join-section { background: #080d1b; text-align: center; }
-.section-heading.compact { margin-right: auto; margin-left: auto; }
-.steps { display: flex; align-items: flex-start; justify-content: center; }
-.steps article { width: min(280px, 30%); }
-.step-number {
-  display: grid;
-  width: 54px;
-  height: 54px;
-  margin: 0 auto 25px;
-  place-items: center;
-  border: 1px solid rgba(105, 226, 220, 0.55);
-  border-radius: 50%;
+.journey-copy > p:not(.world-label), .destination-heading > p:last-child {
+  color: var(--muted);
+  line-height: 1.9;
+}
+code {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid rgba(105, 226, 220, 0.22);
+  border-radius: 6px;
   color: var(--cyan);
   background: rgba(105, 226, 220, 0.07);
   font-family: Consolas, monospace;
+  font-size: 0.85em;
+}
+.notice {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 25px;
+  padding: 16px;
+  border-left: 2px solid var(--star);
+  color: var(--star);
+  background: rgba(255, 214, 107, 0.05);
+}
+.notice > span { padding-top: 2px; font-size: 1.2rem; }
+.notice p { margin: 0; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
+.notice strong { display: block; margin-bottom: 3px; color: #f3de9b; }
+.claim-steps {
+  display: grid;
+  gap: 10px;
+  margin: 25px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.claim-steps li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #d7deed;
+  font-size: 0.8rem;
+}
+.claim-steps span {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border: 1px solid rgba(105, 226, 220, 0.3);
+  border-radius: 50%;
+  color: var(--cyan);
+  font-family: Consolas, monospace;
+  font-size: 0.66rem;
+}
+.unlock-message {
+  position: relative;
+  max-width: 780px;
+  margin: 150px auto;
+  padding: 55px clamp(28px, 6vw, 75px);
+  border: 1px solid rgba(159, 140, 255, 0.3);
+  border-radius: 18px;
+  background: radial-gradient(circle at 50% 0%, rgba(159, 140, 255, 0.18), transparent 50%), rgba(18, 26, 49, 0.72);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.unlock-star {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--star);
+  font-size: 2rem;
+  filter: drop-shadow(0 0 14px rgba(255, 214, 107, 0.5));
+}
+.unlock-message .eyebrow { margin-bottom: 15px; color: var(--purple); }
+.unlock-message h3 { margin-bottom: 16px; font-size: clamp(1.7rem, 3.2vw, 2.7rem); font-weight: 900; }
+.unlock-message > p:last-of-type { margin-bottom: 17px; color: var(--muted); line-height: 1.8; }
+.unlock-message small { color: #7e89a1; font-size: 0.7rem; }
+.destination-heading { max-width: 720px; margin-bottom: 48px; }
+.destination-heading h2 { margin-bottom: 20px; font-size: clamp(2.2rem, 4.5vw, 4rem); font-weight: 900; letter-spacing: -0.04em; }
+.destination-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.destination-card {
+  position: relative;
+  min-height: 580px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #10182d;
+}
+.destination-card > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.destination-card:hover > img { transform: scale(1.035); }
+.destination-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 10, 22, 0.05) 20%, rgba(6, 10, 22, 0.95) 82%);
+}
+.destination-copy { position: absolute; z-index: 2; right: 0; bottom: 0; left: 0; padding: 38px; }
+.destination-meta { display: flex; gap: 8px; margin-bottom: 20px; }
+.destination-meta span {
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: #e3e9f6;
+  background: rgba(7, 11, 24, 0.45);
+  font-size: 0.62rem;
   font-weight: 700;
-  box-shadow: 0 0 25px rgba(105, 226, 220, 0.1);
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(6px);
 }
-.step-line {
-  width: 10%;
-  height: 1px;
-  margin-top: 27px;
-  background: linear-gradient(90deg, rgba(105, 226, 220, 0.35), rgba(159, 140, 255, 0.35));
-}
-.steps strong { color: var(--cyan); font-family: Consolas, monospace; font-weight: 600; }
+.destination-copy h3 { margin-bottom: 12px; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 900; }
+.destination-copy > p:not(.world-label) { max-width: 480px; margin-bottom: 20px; color: #c3ccde; font-size: 0.86rem; line-height: 1.8; }
 .community-section {
   min-height: 560px;
   overflow: hidden;
@@ -536,12 +703,16 @@ h1 span, .section-heading h2 span {
 @media (max-width: 800px) {
   .hero-content { width: min(100% - 32px, 1180px); padding-top: 130px; }
   .comet { top: 20%; right: -3%; width: 45vw; opacity: 0.65; }
-  .feature-grid { grid-template-columns: 1fr; }
-  .feature-card.featured { grid-row: auto; }
   .section { padding-top: 95px; padding-bottom: 95px; }
-  .steps { display: grid; gap: 20px; }
-  .steps article { width: min(100%, 340px); }
-  .step-line { width: 1px; height: 35px; margin: 0 auto; }
+  .server-values { grid-template-columns: 1fr; }
+  .journey-heading { margin-bottom: 60px; }
+  .journey-list { gap: 75px; }
+  .journey-step, .journey-step.reverse { grid-template-columns: 1fr; gap: 30px; }
+  .journey-step.reverse .journey-image { order: 0; }
+  .journey-copy { padding: 0 5px; }
+  .unlock-message { margin: 105px auto; }
+  .destination-grid { grid-template-columns: 1fr; }
+  .destination-card { min-height: 520px; }
   .community-glow { right: -100px; opacity: 0.45; }
 }
 
@@ -553,10 +724,11 @@ h1 span, .section-heading h2 span {
   .primary-button { width: 100%; }
   .live-status { align-items: flex-start; flex-wrap: wrap; line-height: 1.7; }
   .status-divider { display: none; }
-  .feature-card { padding: 28px; }
-  .feature-card.featured { min-height: 520px; }
-  .feature-copy { padding: 28px; }
-  .feature-visual { height: 55%; }
+  .server-values article { padding: 22px; }
+  .journey-image { border-radius: 11px; }
+  .unlock-message { padding: 42px 24px; }
+  .destination-card { min-height: 470px; }
+  .destination-copy { padding: 26px; }
   .community-actions { display: grid; }
 }
 </style>

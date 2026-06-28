@@ -1,13 +1,13 @@
 <template>
   <div class="site-shell">
-    <header class="site-header">
+    <header class="site-header" :class="{ 'inner-header': route.path !== '/' }">
       <nav class="site-nav" aria-label="メインナビゲーション">
         <NuxtLink class="brand" to="/" aria-label="ほうき鯖 トップページ">
           <span class="brand-mark" aria-hidden="true">✦</span><span>ほうき鯖</span>
         </NuxtLink>
         <div class="nav-links">
           <NuxtLink to="/#about">ほうき鯖について</NuxtLink>
-          <NuxtLink to="/#join">参加方法</NuxtLink>
+          <NuxtLink to="/#join">冒険の流れ</NuxtLink>
           <NuxtLink class="nav-cta" to="/#community">コミュニティ</NuxtLink>
         </div>
       </nav>
@@ -26,6 +26,10 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+const route = useRoute()
+</script>
 
 <style lang="scss">
 :root {
@@ -51,6 +55,7 @@ body {
 a { color: inherit; }
 .site-shell { min-height: 100vh; overflow: hidden; }
 .site-header { position: absolute; z-index: 20; top: 0; width: 100%; }
+.site-header.inner-header { position: relative; background: #080d1b; }
 .site-nav {
   display: flex;
   align-items: center;
