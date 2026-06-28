@@ -186,6 +186,7 @@
 const config = useRuntimeConfig()
 const discord = config.public.discordInviteLink
 const youtube = config.public.youtubePlaylistLink
+const apiBaseUrl = config.public.apiBaseUrl.replace(/\/$/, '')
 const serverAddress = 'mc.houkiserver.com'
 
 useHead({
@@ -227,7 +228,7 @@ async function copyAddress() {
 
 async function fetchServerStatus() {
   try {
-    const statusResponse = await $fetch('/api/serverStatus', { signal: AbortSignal.timeout(4000) })
+    const statusResponse = await $fetch(`${apiBaseUrl}/server-status`, { signal: AbortSignal.timeout(4000) })
     serverStatus.isServerOnline = statusResponse.isServerOnline
 
     if (statusResponse.isServerOnline && statusResponse.result) {
