@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     public: {
       discordInviteLink: process.env.DISCORD_INVITE_LINK,
       youtubePlaylistLink: process.env.YOUTUBE_PLAYLIST_LINK,
+      mapLink: process.env.MAP_LINK,
     }
   }
 })

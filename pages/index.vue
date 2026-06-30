@@ -134,6 +134,15 @@
           </div>
         </article>
       </div>
+
+      <a v-if="mapLink" class="map-link" :href="mapLink" target="_blank" rel="noreferrer">
+        <span class="map-link-icon" aria-hidden="true">⌖</span>
+        <span class="map-link-copy">
+          <strong>公開地図でワールドを見る</strong>
+          <small>建築場所や地形をブラウザから確認できます。</small>
+        </span>
+        <span class="map-link-arrow" aria-hidden="true">↗</span>
+      </a>
     </section>
 
     <section id="about" class="section about-section">
@@ -194,6 +203,7 @@
 const config = useRuntimeConfig()
 const discord = config.public.discordInviteLink
 const youtube = config.public.youtubePlaylistLink
+const mapLink = config.public.mapLink
 const serverAddress = 'mc.houkiserver.com'
 
 useHead({
@@ -674,6 +684,41 @@ code {
 }
 .destination-copy h3 { margin-bottom: 12px; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 900; }
 .destination-copy > p:not(.world-label) { max-width: 480px; margin-bottom: 20px; color: #c3ccde; font-size: 0.86rem; line-height: 1.8; }
+.map-link {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 23px 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--text);
+  background: rgba(18, 26, 49, 0.72);
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+.map-link:hover {
+  border-color: rgba(105, 226, 220, 0.45);
+  color: var(--text);
+  background: rgba(24, 35, 63, 0.88);
+  transform: translateY(-2px);
+}
+.map-link-icon {
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid rgba(105, 226, 220, 0.28);
+  border-radius: 50%;
+  color: var(--cyan);
+  background: rgba(105, 226, 220, 0.06);
+  font-size: 1.4rem;
+}
+.map-link-copy { display: grid; gap: 5px; }
+.map-link-copy strong { font-size: 1rem; }
+.map-link-copy small { color: var(--muted); font-size: 0.75rem; }
+.map-link-arrow { margin-left: auto; color: var(--cyan); }
 .community-section {
   min-height: 560px;
   overflow: hidden;
