@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'ほうき鯖',
+      htmlAttrs: {
+        lang: 'ja'
+      },
       link: [
         {
           rel: 'stylesheet',
@@ -19,6 +22,7 @@ export default defineNuxtConfig({
       discordInviteLink: process.env.DISCORD_INVITE_LINK,
       youtubePlaylistLink: process.env.YOUTUBE_PLAYLIST_LINK,
       mapLink: process.env.MAP_LINK,
+      siteUrl: process.env.SITE_URL,
     }
   }
 })

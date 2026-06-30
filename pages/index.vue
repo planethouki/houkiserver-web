@@ -205,10 +205,36 @@ const discord = config.public.discordInviteLink
 const youtube = config.public.youtubePlaylistLink
 const mapLink = config.public.mapLink
 const serverAddress = 'mc.houkiserver.com'
+const siteUrl = config.public.siteUrl
+  ? `${String(config.public.siteUrl).replace(/\/+$/, '')}/`
+  : ''
+const pageTitle = 'ほうき鯖 | Java版 Minecraft サーバー'
+const pageDescription = '対人戦なし。少人数で落ち着いて、採掘・建築・冒険を楽しめるJava版Minecraftサバイバルサーバー「ほうき鯖」。'
+const ogImageUrl = siteUrl ? `${siteUrl}og-image.png` : '/og-image.png'
 
 useHead({
-  title: 'ほうき鯖 | Java版 Minecraft サーバー',
-  meta: [{ name: 'description', content: 'みんなでのんびり冒険を楽しむ、Java版 Minecraft マルチプレイサーバー「ほうき鯖」。' }],
+  link: siteUrl ? [{ rel: 'canonical', href: siteUrl }] : [],
+})
+
+useSeoMeta({
+  title: pageTitle,
+  description: pageDescription,
+  robots: 'index, follow',
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogType: 'website',
+  ogLocale: 'ja_JP',
+  ogSiteName: 'ほうき鯖',
+  ogUrl: siteUrl || undefined,
+  ogImage: ogImageUrl,
+  ogImageAlt: 'ほうき鯖の開拓ワールドに作られた街並み',
+  ogImageWidth: 1920,
+  ogImageHeight: 1080,
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription,
+  twitterImage: ogImageUrl,
+  twitterImageAlt: 'ほうき鯖の開拓ワールドに作られた街並み',
 })
 
 let fetchStatusInterval
