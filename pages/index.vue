@@ -179,6 +179,14 @@
         <p class="contact-note">※ Xは運営者の個人アカウントです。サーバー情報の発信専用ではありません。</p>
       </div>
     </section>
+
+    <section class="final-address-section">
+      <p>サーバーアドレス</p>
+      <button class="final-address-button" type="button" @click="copyAddress">
+        <strong>{{ serverAddress }}</strong>
+        <span>{{ copied ? 'コピーしました！' : 'クリックでコピー' }}</span>
+      </button>
+    </section>
   </div>
 </template>
 
@@ -709,6 +717,37 @@ code {
   font-size: 0.7rem;
   line-height: 1.7;
 }
+.final-address-section {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding: 80px 24px;
+  border-top: 1px solid var(--line);
+  background: #080d1b;
+  text-align: center;
+}
+.final-address-section > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.final-address-button {
+  display: grid;
+  gap: 7px;
+  min-width: min(100%, 360px);
+  padding: 18px 30px;
+  border: 1px solid rgba(105, 226, 220, 0.35);
+  border-radius: 10px;
+  color: var(--text);
+  background: rgba(13, 23, 43, 0.8);
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.final-address-button:hover { border-color: var(--cyan); transform: translateY(-2px); }
+.final-address-button strong { font-family: Consolas, monospace; font-size: 1.35rem; }
+.final-address-button span { color: var(--muted); font-size: 0.68rem; }
 .text-link {
   display: inline-flex;
   gap: 12px;
