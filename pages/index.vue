@@ -524,6 +524,7 @@ h1 span { white-space: nowrap; }
 .journey-image {
   position: relative;
   margin: 0;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -541,7 +542,7 @@ h1 span { white-space: nowrap; }
 .journey-image img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
 }
 .protect-image img { object-position: center 45%; }
@@ -814,6 +815,7 @@ code {
   .journey-list { gap: 75px; }
   .journey-step, .journey-step.reverse { grid-template-columns: 1fr; gap: 30px; }
   .journey-step.reverse .journey-image { order: 0; }
+  .journey-image { aspect-ratio: 3 / 4; }
   .journey-copy { padding: 0 5px; }
   .unlock-message { margin: 105px auto; }
   .destination-grid { grid-template-columns: 1fr; }
