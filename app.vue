@@ -8,6 +8,7 @@
         <div class="nav-links">
           <NuxtLink to="/#about">ほうき鯖について</NuxtLink>
           <NuxtLink to="/#join">冒険の流れ</NuxtLink>
+          <NuxtLink to="/worlds">ワールド紹介</NuxtLink>
           <NuxtLink class="nav-cta" to="/#community">困ったときは</NuxtLink>
         </div>
       </nav>
@@ -19,6 +20,7 @@
       <NuxtLink class="footer-brand" to="/"><img class="footer-mark" src="/favicon.ico" alt="" width="24" height="24">ほうき鯖</NuxtLink>
       <p>Java版 Minecraft サーバー</p>
       <div class="footer-links">
+        <NuxtLink to="/worlds">ワールド紹介</NuxtLink>
         <NuxtLink to="/terms">利用規約</NuxtLink>
         <NuxtLink to="/privacy">プライバシーポリシー</NuxtLink>
       </div>
