@@ -118,6 +118,8 @@ const worlds = [
     noticeIcon: '↻',
     noticeTitle: '定期的に再生成されます',
     notice: '建築物や設置物もリセットの対象です。',
+    image: '/6-saisei_nether.png',
+    imageAlt: '溶岩の海と玄武岩デルタが広がるsaisei_nether',
     theme: 'nether',
   },
   {
@@ -142,6 +144,8 @@ const worlds = [
     purpose: 'kaitaku側のネザー',
     difficulty: 'ノーマル',
     tags: ['ネザー', '原則リセットなし'],
+    image: '/7-kaitaku_nether.png',
+    imageAlt: '広い洞窟とグロウストーンが見えるkaitaku_nether',
     theme: 'ember',
   },
   {
@@ -169,6 +173,8 @@ const worlds = [
     noticeIcon: '◇',
     noticeTitle: '足元に注意',
     notice: '空っぽのワールドです。準備を整えてから向かいましょう。',
+    image: '/8-bouken_nether.png',
+    imageAlt: '空中に足場や建築物が伸びるbouken_nether',
     theme: 'void',
   },
   {
@@ -183,6 +189,8 @@ const worlds = [
     noticeIcon: '↻',
     noticeTitle: '定期的に再生成されます',
     notice: '地形・建築物・設置したアイテムはリセットされます。エンダードラゴンも定期的に復活します。',
+    image: '/9-end.png',
+    imageAlt: '黒曜石の塔と多数のエンダーマンが見えるエンド',
     theme: 'end',
   },
 ]
